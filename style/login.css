@@ -1,0 +1,36 @@
+body {
+    background-color: #9b9ba5;
+}
+.login-container {
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    max-width: 600px;
+    width: 100%;
+    padding: 60px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 12px;
+}
+.form-control {
+    background: #e0e0e0;
+    color: black;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+.text-prem{
+    color : #3b82f6;;
+}
+.btn-primary {
+    background: #3b82f6;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 1.2rem;
+}
+.btn-primary:hover {
+    background: #2563eb;
+}
+a {
+    text-decoration: none;
+}
