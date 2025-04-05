@@ -14,7 +14,7 @@ function showContent(type) {
       missionTab.classList.remove("active");
     }
   }
-
+//for the animatedup of container 
   document.addEventListener("DOMContentLoaded", function() {
     const elements = document.querySelectorAll(".animate-up");
 
@@ -34,7 +34,7 @@ function showContent(type) {
     checkScroll();
 });
 
-  //for picture on the SK people
+  //for picture on the categories
   document.addEventListener("DOMContentLoaded", function() {
     const categories = document.querySelectorAll(".category");
 
@@ -52,3 +52,25 @@ function showContent(type) {
     checkScroll();
 });
 
+//for login make it hide in home and show when click the login button
+//login funtion
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('show-login').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('login-section').style.display = 'flex';
+      document.body.style.overflow = 'hidden'; 
+    });
+
+    document.getElementById('close-login').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('login-section').style.display = 'none';
+      document.body.style.overflow = 'auto'; 
+    });
+
+    document.getElementById('login-section').addEventListener('click', function(e) {
+      if (e.target === this) {
+        document.getElementById('login-section').style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
