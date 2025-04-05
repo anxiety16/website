@@ -4,7 +4,7 @@ nav{
 span{
     font-size: 1.2rem;
 }
-/*first navigation bar for index.html*/
+/*welcome section in index.html*/
 .welcome-container{
     background-color:rgba(255, 255, 255, 0.1);
     padding: 20px; 
@@ -134,6 +134,7 @@ span{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+/* Ranimation of the container and text in welcome section */
 @media (max-width: 768px) {
     .welcome-container {
         flex-direction: column;
@@ -143,7 +144,6 @@ span{
         margin-bottom: 20px;
     }
 }
-/* Animation for the text */
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
